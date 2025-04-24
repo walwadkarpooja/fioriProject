@@ -1,0 +1,10 @@
+<mvc:View controllerName="org.indexit.demo1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <Input placeholder="enter city" id='inputId'></Input>
+        <Button press="onClick" id="idBtn" text="submit" type="Default" width="150px" badgeStyle="Attention" enabled="true" textDirection="RTL" />
+    </content>
+    </Page> 
+</mvc:View>
