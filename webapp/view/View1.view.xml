@@ -2,9 +2,22 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-    <content>
-        <Input placeholder="enter city" id='inputId'></Input>
-        <Button press="onClick" id="idBtn" text="submit" type="Default" width="150px" badgeStyle="Attention" enabled="true" textDirection="RTL" />
+    <content >
+        <!-- <Input placeholder="Enter First Name" id='inputId1' liveChange="onChange" submit="onSubmit"></Input>
+        <Input placeholder="Enter Last Name" id='inputId2' liveChange="onChange" submit="onSubmit"></Input> -->
+
+        <!-- <Input placeholder="Enter First Name" id='inputId1' ></Input>
+        <Input placeholder="Enter Last Name" id='inputId2' ></Input>
+        
+        <Button press="onClick" id="idBtn" text="submit" type="Default" width="150px" badgeStyle="Attention" enabled="true" textDirection="RTL" /> -->
+       
+
+        <Input placeholder="Enter one number" id='num1'/>
+        <Input placeholder="Enter second number" id='num2'/>
+        <Button id='btnNum1' text='Addition' icon="sap-icon://add" press="onCalculate" />
+        <Button id='btnNum2' text='Substraction' icon="sap-icon://less" press="onCalculate"/>
+        <Button id='btnNum3' text='Multiplication' icon="sap-icon://decline" press="onCalculate"/>
+        <Button id="btnNum4" text="/ Division" press="onCalculate" />
     </content>
     </Page> 
 </mvc:View>
