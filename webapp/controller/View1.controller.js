@@ -43,7 +43,9 @@ sap.ui.define([
             let input1 = parseInt(this.getView().byId('num1').getValue());
             let input2 = parseInt(this.getView().byId('num2').getValue());
             
-            let buttonId = oEvent.getSource().getId().split("--")[2];
+            // let buttonId = oEvent.getSource().getId().split("--")[2];
+
+            let buttonId = oEvent.oSource.getProperty("text");
 
             console.log('source', buttonId);
 
@@ -65,19 +67,19 @@ sap.ui.define([
             }
 
             switch(buttonId){
-                case "btnNum1" : 
+                case "Addition" : 
                     result = input1 + input2;
                     MessageToast.show(`The addition of two number is ${result} `, sOptions);
                     break;
-                case "btnNum2" :
+                case "Substraction" :
                     result = input1 - input2;
                     MessageToast.show(`The substraction of two number is ${result} `, sOptions);
                     break;
-                case "btnNum3" : 
+                case "Multiplication" : 
                     result = input1 * input2;
                     MessageToast.show(`The multiplication of two number is ${result} `, sOptions);
                     break;
-                case "btnNum4" : 
+                case "/ Division" : 
                     result = input1 / input2;
                     MessageToast.show(`The division of two number is ${result} `, sOptions);
                     break;

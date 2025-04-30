@@ -14,10 +14,10 @@
 
         <Input placeholder="Enter one number" id='num1'/>
         <Input placeholder="Enter second number" id='num2'/>
-        <Button id='btnNum1' text='Addition' icon="sap-icon://add" press="onCalculate" />
-        <Button id='btnNum2' text='Substraction' icon="sap-icon://less" press="onCalculate"/>
-        <Button id='btnNum3' text='Multiplication' icon="sap-icon://decline" press="onCalculate"/>
-        <Button id="btnNum4" text="/ Division" press="onCalculate" />
+        <Button id='btnNum1' text='{i18n>add}' icon="sap-icon://add" press="onCalculate" />
+        <Button id='btnNum2' text='{i18n>sub}' icon="sap-icon://less" press="onCalculate"/>
+        <Button id='btnNum3' text='{i18n>mul}' icon="sap-icon://decline" press="onCalculate"/>
+        <Button id="btnNum4" text="{i18n>div}" press="onCalculate" />
     </content>
     </Page> 
 </mvc:View>
